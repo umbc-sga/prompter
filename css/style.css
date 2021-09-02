@@ -1,0 +1,85 @@
+:root {
+    --animation: fadeOut ease 1s forwards;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+section {
+    height: 33%;
+    width: 100%;
+}
+
+#old {
+    overflow-y: scroll;
+    text-align: center;
+}
+
+#prompter {
+    text-align: center;
+}
+
+#prompter h1 {
+    margin-top: 0;
+}
+
+.fade-out {
+    animation: var(--animation);
+    -webkit-animation: var(--animation);
+    -moz-animation: fadeOut ease 8s;
+    -o-animation: fadeOut ease 8s;
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0.5;
+    }
+}
+  
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+  
+@-webkit-keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0.5;
+    }
+}
+  
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
